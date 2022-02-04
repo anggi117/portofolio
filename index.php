@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anggi117 Portofolio</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- font Family Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- smooth scrool -->
+    <style>
+        html {
+            scroll-behavior: smooth;    
+        }
+    </style>
+
+    
+
+</head>
+<body class="bg-gray-800 font-poppins overscroll-auto">
+<!-- Alpine js -->
+<script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+
+<div class="bg-gray-600" x-data="topBtn">
+    <button @click="scrolltoTop" id="topButton"
+        class="text-3xl text-green-700 fixed z-10 hidden opacity-80  bottom-5 right-5">
+        <i class="fas fa-arrow-circle-up"></i>
+    </button>
+</div>
+
+
+<!-- navbar start -->
+<div class="container">
+    <div class="flex flex-col md:flex-row px-4">
+        <div class="flex justify-between items-center px-4 py-4 md:py-0 border-b border-gray-700 md:border-b-0">
+            <div class=""><a href="#" class="uppercase font-semibold text-gray-100 md:mr-4 tracking-widest">Anggi117</a></div>
+            <div class="nav-toggler">
+                <button class="items-center">
+                    <svg class="transition duration-500 ease-in-out w-6 h-6 outline-none text-gray-100 block md:hidden" className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" /></svg>
+                </button>
+            </div>
+        </div>
+        <div class="transition duration-500 ease-in-out nav md:flex hidden flex-col md:flex-row justify-between w-full py-4 md:py-0 md:bg-transparent bg-gray-700 rounded-xl">
+            <div class="transition duration-500 ease-in-out flex flex-col md:flex-row md:gap-4"></div>
+
+            <!-- navs -->
+            <div class="transition duration-500 ease-in-out flex flex-col md:flex-row md:gap-4 p-4">
+                <a href="#portfolio" class="block px-4 py-2 md:py-1 rounded-md md:my-2 text-gray-100 md:text-left text-center hover:bg-gray-800 transition duration-200 ease-in-out">Portfolio</a>
+                <a href="#Aboutme" class="block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100 md:text-left text-center hover:bg-gray-800 transition duration-200 ease-in-out">About</a>
+            </div>
+
+            <!-- social for desktop -->
+            <div class="flex flex-col md:flex-row md:gap-3 md:items-center">
+                <a href="https://facebook.com/anggi118/" class="hidden md:block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100 "><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="https://www.twitter.com/anggi117_" class="hidden md:block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100 "><i class="fab fa-twitter text-xl"></i></a>
+                <a href="https://www.instagram.com/anggi117/" class="hidden md:block px-4 py-2 md:py-1 rounded-md my-2 text-gray-100 "><i class="fab fa-instagram text-xl"></i></a>
+                
+                <!-- social for mobile -->
+                <div class="flex md:hidden align-center justify-around">
+                <a href="https://github.com/anggi117"><i class="text-gray-50 hover:text-gray-300 transition duration-300 ease-in-out fab fa-github text-xl"></i></a>
+                <a href="https://www.linkedin.com/in/anggi117"><i class="text-gray-50 hover:text-gray-300 transition duration-300 ease-in-out fab fa-linkedin-in text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- main page -->
+    <section class="mt-10">
+        <div class="mx-4 text-gray-50">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 h-62">
+                <div class="flex">
+                <img src="assets/images/akubang.jpg" class="w-30 h-30 md:w-52 md:h-52 rounded-3xl md:rounded-full" alt="">
+                <div class="block ml-3 md:ml-10 py-5 ">
+                    <p class="block">Hello, I'm</p>
+                    <h2 class="block text-xl lg:text-4xl">Anggie Dwi Putra</h2>
+                    <p class="text-sm opacity-70 mt-2">Backend Developer</p>
+                    <div class="mt-3 md:mt-5 space-x-6">
+                        <a href="https://github.com/anggi117">
+                            <i class="fab fa-github md:text-2xl hover:text-gray-300 transition duration-300 ease-in-out"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anggi117">
+                            <i class="fab fa-linkedin-in md:text-2xl hover:text-gray-300 transition duration-300 ease-in-out"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="lg:block ">
+                    <p class="block pt-5 text-center md:text-left">Career</p>
+                    <ul class="mt-2">
+                        <li class="text-lg  text-center md:text-left">Widigital Tri Buana</li>
+                        <p class="text-sm opacity-70  text-center md:text-left">Internship 2018 - 2019</p>
+                        <li class="text-lg mt-2  text-center md:text-left">PT. Yapindo Jaya Abadi</li>
+                        <p class="text-sm opacity-70  text-center md:text-left">Back End Developer 2020 - Saat ini</p>
+                    </ul>
+                </div>
+                <div class="lg:block ">
+                    <p class="block pt-5 text-center md:text-left mt-5 md:mt-0">Organization</p>
+                    <ul class="mt-2">
+                        <li class="text-lg text-center md:text-left">IT Club SMKN 2 Jakarta</li>
+                        <p class="text-sm opacity-70 text-center md:text-left">2017 - 2018</p>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h1 class="text-center text-gray-50 mt-10 md:mt-5">Familiar with</h1>
+            <div class="imgae-logo justify-center flex gap-6">
+                <img src="assets/images/php.png" class="w-14 mt-3 shadow-xl rounded-xxl">
+                <img src="assets/images/js.png" class="w-14 mt-3 shadow-xl rounded-xl">
+                <img src="assets/images/adonis.png" class="w-14 mt-3 shadow-xl rounded-xl">
+                <img src="assets/images/codeigniter.png" class="w-14 mt-3 shadow-xl rounded-xxl">
+            </div>
+        </div>
+        <div class="flex justify-between items-center mx-4 py-6 border-b border-gray-700 md:border-b-0"> </div>
+
+    </section>
+
+    <!-- To Top -->
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('topBtn', () => ({
+                scrolltoTop() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            }));
+        });
+    
+        var topBtn = document.getElementById("topButton");
+        window.onscroll = function () {
+            (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ?
+            topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
+    
+        }
+    </script>
+
+    <section class="portfolio">
+        <h1 class="text-center text-gray-50 text-lg mt-10 md:mt-0" id="portfolio">Portfolio</h1>
+        <div class="px-10 mt-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+            <!--Card 1-->
+            <div class="rounded-3xl overflow-hidden bg-gray-700">
+            <img class="w-full rounded-t-3xl" src="assets/images/m3.png" alt="M3">
+                <div class="px-6 py-4">
+                <div class="font-semibold text-gray-50 text-xl mb-2">M3 Yapindo - Website PT.Yapindo Jaya Abadi</div>
+                <p class="text-gray-50 text-justify text-sm">
+                M3 Yapindo adalah website yang digunakan untuk pembelian aplikasi pembelajaran ilmu kesehatan yang diperkhususkan untuk mahasiswa kesehatan seperti Kedokteran, Kedokteran Gigi, Farmasi. Website M3 juga sudah terintegrasi dengan Midtrans payment gateway. Selain untuk pembelian aplikasi, Website M3 juga memiliki event-event menarik seperti Webinar kesehatan yang biasanya pendaftaran ada dibagian "Live Teaching"
+                </p>
+                </div>
+                <div class="px-6 pb-4">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer hover:bg-gray-400 transition duration-300 ease-in-out">Backend</span>
+                </div>
+            </div>
+            
+            <!--Card 2-->
+            <div class="rounded-3xl overflow-hidden  bg-gray-700">
+                <img class="w-full rounded-t-3xl" src="assets/images/neo.png" alt="NEO">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-gray-50 text-xl mb-2">NEO Yapindo - Website PT.Yapindo Jaya Abadi</div>
+                            <p class="text-gray-50 text-justify text-sm">
+                            NEO Yapindo adalah website yang digunakan untuk pembelian aplikasi yang diperkhususkan untuk mahasiswa yang akan menghadapi ujian kompetisi. Website NEO juga sudah terintegrasi dengan Midtrans payment gateway. Selain untuk pembelian aplikasi, website NEO juga memiliki event yang menarik. Event yang sering diadakan pada website NEO adalah Tryout Nasional mingguan dengan berbeda-beda variasi.
+                            </p>
+                        </div>
+                        <div class="px-6 pb-4">
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer hover:bg-gray-400 transition duration-300 ease-in-out">Backend</span>
+                        </div>
+            </div>
+
+            <!--Card 3-->
+            <div class="rounded-3xl overflow-hidden bg-gray-700">
+                <img class="w-full rounded-t-3xl" src="assets/images/ide.png" alt="IDE">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-gray-50 text-xl mb-2">IDE Yapindo - Website PT.Yapindo Jaya Abadi</div>
+                  <p class="text-gray-50 text-justify text-sm">
+                      IDE Yapindo adalah website yang digunakan untuk pembelian aplikasi pembelajaran ekonomi untuk mahasiswa ekonomi dan bisnis di Indonesia. Website IDE juga sudah terintegrasi dengan Midtrans payment gateway. Selain untuk pembelian aplikasi, website IDE juga memiliki fitur "Live Teaching", yang dimana disitu akan ada banyak event menarik. Event yang sering diadakan pada website IDE adalah Webinar, Bedah soal dengan dosen dosen terkemuka. 
+                  </p>
+                </div>
+                <div class="px-6 pb-4">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer hover:bg-gray-400 transition duration-300 ease-in-out">Backend</span>
+                </div>
+              </div>
+            <!-- Card 4 -->
+              <div class="rounded-3xl overflow-hidden bg-gray-700">
+                    <img class="w-full rounded-t-3xl" src="assets/images/Yubot.png" alt="M3">
+                <div class="px-6 py-4">
+                <div class="font-semibold text-gray-50 text-xl mb-2">Yubot - Yu-Gi-Oh! show detail card BOT on Discord</div>
+                <p class="text-gray-50 text-justify text-sm">
+                    Yubot adalah BOT yang dikhusukan untuk menampilkan data-data dari kartu Yu-Gi-Oh!. dengan menggunakan API dari ygoprodeck Yubot dapat menampilkan satu data kartu yang diinginkan
+                </p>
+                </div>
+                <div class="px-6 pb-4">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer hover:bg-gray-400 transition duration-300 ease-in-out">Backend</span>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+        
+    </section>
+    
+    <section class="Aboutme" id="Aboutme">
+        <h1 class="text-center text-gray-50 text-lg my-8 mb-4" id="portfolio">About me</h1>
+        <div class="container px-10 md:px-56 text-justify">
+            <div class="flex justify-center px-10">
+                <div>
+                    <img src="assets/images/fotosekolahkubang.jpg" alt="profile" class="w-20 md:w-80 rounded-1xl md:rounded-full">
+                </div>
+            </div>
+
+            <div class="flex justify-center pt-5 text-gray-100">
+                <h1 class="bg-gray-700 px-5 py-5 rounded-xl">
+                    Saya seorang alumni SMKN 2 Jakarta dengan jurusan Rekayasa Perangkat Lunak. Saya seorang programmer dengan pengalaman 2 tahun dibidang Backend developer.
+                    
+                    Saya saat ini bekerja di PT.Yapindo Jaya Abadi sebagai Backend Developer. disana saya membuat API yang dimana API tersebut digunakan untuk aktivitas pada mobile application </h1>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ================== TIDAK BOLEH DIHAPUS ========================== -->
+<!-- Copyright Resa Endrawan https://www.facebook.com/resa.endrawan56/ -->
+<div class="footer mt-16 bg-gray-700 py-4 text-gray-50">
+    <div class="text-center">
+        <span>2021 &copy; Made with love by <a href="https://rend.my.id" class="font-semibold hover:text-gray-800">res</a></span>
+    </div>
+</div>
+
+<script src="js/hamburger.js"></script>
+</body>
+</html>
